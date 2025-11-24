@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consumindo API Pública</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumindo API Pública</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Consumindo API Pública</h1>
-    <button id="btnBuscar">Buscar Usuários</button>
-    <div id="resultados"></div>
+  <header>
+    <h1>Lista de Usuários</h1>
+    <p>Busque usuários de uma API pública e veja os dados exibidos dinamicamente.</p>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <div class="controls">
+      <button id="btnBuscar">Buscar Usuários</button>
+    </div>
+    <div id="resultados" class="resultados"></div>
+  </main>
+
+  <footer>
+    <p>Projeto de estudo de consumo de APIs com JSON &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
