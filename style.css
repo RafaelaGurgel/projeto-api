@@ -1,28 +1,89 @@
+/* Fonte padrão */
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
 }
 
-h1 {
-    color: #333;
+header {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 20px;
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
 }
 
-#resultados {
-    margin-top: 20px;
+header p {
+  margin-top: 10px;
+  font-size: 1.1rem;
 }
 
+/* Área principal */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Botão estilizado */
+.controls {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button#btnBuscar {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button#btnBuscar:hover {
+  background-color: #357ABD;
+  transform: translateY(-2px);
+}
+
+/* Área de resultados */
+.resultados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card de usuário */
 .usuario {
-    background-color: #fff;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.usuario:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.usuario strong {
+  display: inline-block;
+  width: 60px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4a90e2;
+  color: white;
+  margin-top: 50px;
 }
