@@ -21,4 +21,4 @@ Este projeto é uma aplicação web simples que consome dados de uma API públic
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/RafaelaGurgel/consumir-api.git
+git clone https://github.com/RafaelaGurgel/projeto-api.git
